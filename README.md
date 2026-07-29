@@ -1,10 +1,10 @@
 # CinemaReady
 
-CinemaReady is an educational Microsoft Excel operational prototype for checking whether a cinema hall is technically ready for a screening.
+**CinemaReady** is an educational Microsoft Excel operational prototype for checking whether a cinema hall is technically ready for a screening.
 
-The workbook combines screening details, simulated equipment and network checks, automatic readiness calculations, issue diagnosis, incident tracking, and a visual network topology.
+It combines screening details, simulated equipment and network checks, formula-based readiness calculations, automatic issue diagnosis, incident tracking, and a visual network topology.
 
-> **Important:** CinemaReady does not communicate with real cinema equipment. Device and network statuses are entered manually for demonstration and learning purposes.
+> **Important:** CinemaReady does not communicate with real cinema equipment. Network and functional statuses are entered manually for demonstration and learning purposes.
 
 ## Download
 
@@ -12,34 +12,33 @@ The workbook combines screening details, simulated equipment and network checks,
 
 ## Main Dashboard
 
-The main dashboard contains the screening details, simulated network configuration, equipment checks, live readiness score, automatic diagnosis, and recommended action.
+The dashboard contains screening details, a simulated network configuration, equipment checks, a live readiness score, automatic diagnosis, and a recommended action.
 
 ![CinemaReady main dashboard](screenshots/dashboard-overview.png)
 
-The lower dashboard section displays the final screening decision, project limitations, and example Command Prompt ping tests.
+The lower section displays the final screening decision, project limitations, and example Command Prompt ping tests.
 
 ![CinemaReady readiness decision](screenshots/dashboard-readiness.png)
 
 ## Main Features
 
 - Screening details for hall, movie, date, and start time
-- Status tracking for the projector, sound system, and CCTV camera
-- Simulated IP addressing and ping results
-- Automatic readiness score
-- Final screening readiness decision
+- Manual status entry for the projector, sound system, and CCTV camera
+- Simulated private IP addressing and ping results
+- Automatic readiness score and final screening decision
 - Automatic diagnosis of network and functional issues
 - Recommended operator action
-- Technical incident tracking
+- Technical incident tracking with priority, status, and resolution
 - Visual network topology
 - Project documentation inside the workbook
 
 ## Incident Tracking
 
-The Incident Log worksheet demonstrates a simple IT support process for documenting equipment problems, priorities, status updates, and final resolutions.
+The **Incident Log** worksheet demonstrates a simple IT support process for documenting equipment problems, priorities, status updates, and final resolutions.
 
 ![CinemaReady incident log](screenshots/incident-log.png)
 
-The incident workflow is:
+Workflow:
 
 1. Record the technical issue
 2. Select the affected hall and device
@@ -49,11 +48,9 @@ The incident workflow is:
 
 ## Simulated Network Topology
 
-The Network Map worksheet visualizes the example connection between the support PC, network switch, projector, sound system, and CCTV camera.
+The **Network Map** worksheet visualizes an example connection between the support PC, network switch, projector, sound system, and CCTV camera.
 
 ![CinemaReady simulated network topology](screenshots/network-map.png)
-
-Example network configuration:
 
 | Component | Address |
 |---|---|
@@ -69,11 +66,9 @@ All addresses are simulated private IP addresses used only for educational purpo
 
 ## Project Information
 
-The Project Information worksheet explains the purpose of CinemaReady, its main functions, and the operational workflow.
+The **Project Info** worksheet explains the project purpose, main functions, operational workflow, Excel features used, and project limitations.
 
 ![CinemaReady project overview](screenshots/project-info-overview.png)
-
-It also documents the Excel features used, the simple project explanation, and the project scope and limitations.
 
 ![CinemaReady project details](screenshots/project-info-details.png)
 
@@ -84,53 +79,19 @@ It also documents the Excel features used, the simple project explanation, and t
 - `COUNTIF`
 - Data Validation dropdown lists
 - Conditional Formatting
-- Cell references
-- Percentage calculations
+- Cell references and percentage calculations
 - Merged sections and dashboard formatting
-- Structured operational tables
+- Formatted operational layouts
 
 ## How to Use
 
 1. Download `CinemaReady.xlsx`.
 2. Open it in Microsoft Excel.
-3. Select the hall.
-4. Enter the movie, date, and screening start time.
-5. Update the equipment ping results and functional statuses.
-6. Review the readiness score and automatic diagnosis.
-7. Check the recommended action and final readiness decision.
-8. Record technical problems in the **Incident Log** worksheet.
-9. Document the incident resolution after troubleshooting.
-
-## Operational Workflow
-
-```text
-Pre-screening check
-        ↓
-Enter device status
-        ↓
-Review automatic diagnosis
-        ↓
-Receive readiness decision
-        ↓
-Record an incident when required
-        ↓
-Document the resolution
-```
-
-## Repository Contents
-
-```text
-CinemaReady/
-├── CinemaReady.xlsx
-├── README.md
-└── screenshots/
-    ├── dashboard-overview.png
-    ├── dashboard-readiness.png
-    ├── incident-log.png
-    ├── network-map.png
-    ├── project-info-overview.png
-    └── project-info-details.png
-```
+3. Select the hall and enter the movie, date, and start time.
+4. Update the equipment ping results and functional statuses.
+5. Review the readiness score, automatic diagnosis, and recommended action.
+6. Record technical problems in the **Incident Log** worksheet.
+7. Document the resolution after troubleshooting.
 
 ## Skills Demonstrated
 
@@ -139,27 +100,23 @@ CinemaReady/
 - Basic IP addressing
 - Basic ICMP and ping concepts
 - IT support workflow
-- Technical troubleshooting logic
-- Incident classification
-- Incident documentation
+- Troubleshooting logic
+- Incident classification and documentation
 - Operational reporting
 - Technical project documentation
 
 ## Project Scope and Limitations
 
-CinemaReady is a beginner-level educational operational prototype.
-
-- It does not perform live network scanning.
-- It does not connect to real projectors, sound systems, or CCTV equipment.
-- Ping and functional statuses are entered manually.
-- A successful ping confirms only basic ICMP reachability.
-- A successful ping does not prove that the device itself is functioning correctly.
-- The network addresses and cinema equipment are simulated.
+- No live network scanning
+- No connection to real projectors, sound systems, or CCTV equipment
+- Ping and functional statuses are entered manually
+- A successful ping confirms only basic ICMP reachability
+- A successful ping does not prove that the device itself is functioning correctly
+- All network addresses and cinema equipment are simulated
 
 ## Author
 
-**Boyan Nikolov**
-
+**Boyan Nikolov**  
 Aspiring IT Support and System Administration professional based in Sofia, Bulgaria.
 
 [GitHub Profile](https://github.com/boyan-nk)
